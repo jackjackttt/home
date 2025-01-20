@@ -1,61 +1,64 @@
-/* General styles for the entire page */
+/* General page styling */
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #000000;
-    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Light gray background */
+    color: #333333;           /* Dark gray text */
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
 }
 
-/* Container styling */
+/* Container for layout */
 .container {
-    max-width: 800px;        /* Adjusted for wider layout */
-    padding: 20px;
-    margin: 0 auto;
+    max-width: 900px;
+    margin: 40px auto;         /* Center the content and add top spacing */
+    padding: 0 20px;
 }
 
-/* Profile section styling */
+/* Profile section layout */
 .profile {
     display: flex;
-    align-items: flex-start; /* Align items at the top */
-    gap: 20px;               /* Add space between image and text */
+    align-items: flex-start;  /* Align image and text at the top */
+    gap: 40px;                /* Space between the image and text */
 }
 
-/* Profile picture styling */
+/* Profile image styling */
 .profile-pic {
-    max-width: 150px;        /* Set a reasonable image size */
-    border-radius: 50%;      /* Circular image */
+    width: 200px;             /* Fixed width for the image */
+    height: auto;             /* Maintain aspect ratio */
+    border-radius: 10px;      /* Subtle rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-/* Biography text styling */
-.bio {
-    flex: 1;                 /* Allow the bio to take remaining space */
+/* Content styling */
+.content {
+    max-width: 600px;         /* Limit the width of the text */
 }
 
-/* Paragraph styles */
+/* Paragraph styling */
 p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin: 0 0 15px 0;
+    margin-bottom: 20px;      /* Space between paragraphs */
 }
 
 /* List styling */
 ul {
-    list-style-type: none;
+    list-style: none;         /* Remove bullet points */
     padding: 0;
     margin-top: 20px;
 }
 
 li {
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
+/* Link styling */
 a {
     text-decoration: none;
-    color: #000000;
-    font-size: 1.1rem;
+    color: #007acc;           /* Blue for links */
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #005fa3;           /* Darker blue on hover */
 }
